@@ -12,25 +12,20 @@
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
-*,
-*::before,
-*::after {
+
+* {
 	margin: 0;
 	padding: 0;
-	
 	user-select: none;
 }
 
 html {
 	scroll-behavior: smooth;
-	width: 100%;
-	overflow-x: hidden;
 }
 
 body {
 	font-family: "DotGothic16", sans-serif;
-	width: 100%;
-	overflow-x: hidden;
+	
 }
 
 .container {
