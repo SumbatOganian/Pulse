@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Pulse</title>
+	</head>
+
+	<body>
+		<!-- Шапка -->
+		<header class="header">
+			<div class="header_content">
+				<a href="index.html">
+					<img class="header_logo" src="assets/header/logo.png" alt="" />
+				</a>
+				<ul class="header_list">
+					<a href="#about">
+						<li class="header_list_item">О нас</li>
+					</a>
+					<a href="#portfolio">
+						<li class="header_list_item">Портфолио</li>
+					</a>
+					<a href="#servises">
+						<li class="header_list_item">Услуги</li>
+					</a>
+					<a href="#contacts">
+						<li class="header_list_item">Контакты</li>
+					</a>
+				</ul>
+
+				<img
+					class="header_button buttons"
+					src="assets/header/button.png"
+					alt=""
+				/>
+
+				<img class="burger" src="assets/header/burger.png" alt="" />
+			</div>
+		</header>
+		<!-- -----Модалка для меню на телефоне----- -->
+		<div class="phone_modal_wrapper">
+			<img src="assets/phone_modal/close_btn.png" alt="" class="close_button" />
+			<div class="phone_modal">
+				<ul class="phone_modal_list">
+					<a href="#about">
+						<li class="phone_modal_item">О нас</li>
+					</a>
+					<a href="#portfolio">
+						<li class="phone_modal_item">Портфолио</li>
+					</a>
+					<a href="#servises">
+						<li class="phone_modal_item">Услуги</li>
+					</a>
+					<a href="#contacts">
+						<li class="phone_modal_item">Контакты</li>
+					</a>
+				</ul>
+				<img
+					class="phone_modal_button buttons"
+					src="assets/phone_modal/call_button.png"
+					alt=""
+				/>
+				<img
+					class="phone_modal_button buttons"
+					src="assets/phone_modal/message_button.png"
+					alt=""
+				/>
+				<img
+					class="modal_logo"
+					src="assets/phone_modal/vk_logo.png"
+					alt=""
+					class="logo"
+				/>
+				<img
+					class="modal_logo"
+					src="assets/phone_modal/mail_logo.png"
+					alt=""
+					class="logo"
+				/>
+				<img
+					class="modal_logo"
+					src="assets/phone_modal/max_logo.png"
+					alt=""
+					class="logo"
+				/>
+			</div>
+		</div>
+
+		<div class="form_section_wrapper">
+			<form action="" class="form_section">
+				<p class="form_section_text">
+					Оставляйте контакты - будем творить магию
+				</p>
+				<img src="assets/form/magic 1.png" alt="" class="form_section_img" />
+				<div class="input_box">
+					<label for="name">Введите имя <span class="important">*</span></label>
+					<input id="name" type="text" placeholder="Имя" required />
+				</div>
+				<div class="input_box_phone">
+					<label for="phone"
+						>Введите телефон <span class="important">*</span></label
+					>
+					<div class="input_box_phone_mod">
+						<p class="flag">
+							<img src="assets/form/Russian_flag.png" alt="" /> +7
+						</p>
+						<input
+							id="phone"
+							type="tel"
+							placeholder="Телефон"
+							autocomplete="tel"
+							required
+						/>
+					</div>
+				</div>
+				<div class="input_box">
+					<label for="mail"
+						>Введите email <span class="important">*</span></label
+					>
+					<input id="mail" type="text" placeholder="e-mail" required />
+				</div>
+				<div class="form_submit_section">
+					<div class="checkbox_wrapper">
+						<input type="checkbox" name="" id="checkbox_text" required />
+						<label for="checkbox_text" class="form_submit_section_text"
+							>Я согласен на
+							<span class="form_submit_section_text_mod"
+								>обработку персональных данных</span
+							></label
+						>
+					</div>
+					<button type="submit">
+						<img
+							class="form_section_submit_button"
+							src="assets/form/submit.png"
+							alt=""
+						/>
+					</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="success_modal_wrapper">
+			<div class="success_modal">
+				<h2 class="success_title">Спасибо!</h2>
+
+				<div class="success_icon">
+					<img src="assets/form/rocket.png" alt="" />
+				</div>
+
+				<p class="success_text">
+					Мы уже готовим волшебство. Скоро свяжемся с Вами, чтобы обсудить Ваш
+					проект.
+				</p>
+
+				<p class="success_ps">P.S.: не забудьте проверить почту!</p>
+
+				<p class="success_gift_text">Там подарок</p>
+
+				<div class="success_gift">
+					<img src="assets/form/gift.png" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<!-- Hero-cекция -->
+		<section class="hero_wrapper">
+			<div class="container">
+				<div class="hero">
+					<div class="hero_texts">
+						<p>Разрабатываем</p>
+						<p>IT-продукты, которые приносят доход</p>
+						<p>с первого месяца</p>
+					</div>
+					<div class="hero_button_wrapper">
+						<img
+							class="hero_button buttons"
+							src="assets/hero/order.png"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class="about_wrapper">
+					<h2 class="title">Кто мы?</h2>
+					<div class="texts">
+						<div class="empty"></div>
+						<p>
+							<span>Пульс</span> — это команда разработчиков и дизайнеров,
+							которая создает сайты, приложения и интерфейсы. Мы не просто пишем
+							код и рисуем макеты, а решаем бизнес-задачи: увеличиваем продажи,
+							автоматизируем процессы и делаем продукт удобным для людей.
+						</p>
+					</div>
+					<p class="about_text">
+						В нашем портфеле более 100 успешных проектов: от корпоративных
+						порталов до мобильных приложений с десятками тысяч пользователей. Мы
+						работаем честно: говорим, если идея не сработает, не завышаем сроки
+						и всегда доводим проект до результата.
+					</p>
+					<div class="title_wrapper">
+						<h2 class="title2">
+							Хотите запустить сайт, обновить приложение или сделать дизайн с
+							нуля?<br />
+							Давайте обсудим ваш проект.
+						</h2>
+					</div>
+					<div class="button_wrapper buttons">
+						<img src="assets/about/call.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery_wrapper" id="portfolio">
+			<div class="conainer">
+				<div class="gallery">
+					<h2 class="gallery_title">Проекты, которыми гордимся</h2>
+				</div>
+
+				<div class="gallery_carousel" id="galleryCarousel">
+					<button
+						class="gallery_arrow gallery_arrow_prev"
+						type="button"
+					></button>
+
+					<div class="gallery_track">
+						<article class="gallery_card">
+							<img src="assets/gallery/card1.png" alt="Проект 1" />
+						</article>
+
+						<article class="gallery_card">
+							<img src="assets/gallery/card2.png" alt="Проект 2" />
+						</article>
+
+						<article class="gallery_card">
+							<img src="assets/gallery/card3.png" alt="Проект 3" />
+						</article>
+
+						<article class="gallery_card">
+							<img src="assets/gallery/card4.png" alt="Проект 4" />
+						</article>
+
+						<article class="gallery_card">
+							<img src="assets/gallery/card5.png" alt="Проект 5" />
+						</article>
+					</div>
+
+					<button
+						class="gallery_arrow gallery_arrow_next"
+						type="button"
+					></button>
+				</div>
+				<div class="button_wrapper buttons">
+					<img src="assets/gallery/button.png" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<section class="servises" id="servises">
+			<div class="container">
+				<div class="services_wrapper">
+					<h2 class="services_title">Готовы сделать для вас</h2>
+					<div class="cards">
+						<div class="card">
+							<img src="assets/services/serv1.png" alt="" />
+						</div>
+						<div class="card">
+							<img src="assets/services/serv2.png" alt="" />
+						</div>
+						<div class="card">
+							<img src="assets/services/serv3.png" alt="" />
+						</div>
+					</div>
+					<div class="button_wrapper buttons">
+						<img src="assets/services/call.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="extra" id="">
+			<div class="container">
+				<div class="extra_wrapper">
+					<h2 class="services_title">Наша мотивация</h2>
+					<div class="cards">
+						<div class="card">
+							<img src="assets/extra/com1.png" alt="" />
+						</div>
+						<div class="card">
+							<img src="assets/extra/com2.png" alt="" />
+						</div>
+						<div class="card">
+							<img src="assets/extra/com3.png" alt="" />
+						</div>
+					</div>
+					<div class="button_wrapper buttons">
+						<img src="assets/extra/call.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<header class="footer_header">
+					<div class="logo">
+						<img src="assets/header/logo.png" alt="" />
+					</div>
+					<div class="footer_header_content">
+						<ul class="footer_list">
+							<a href="#about">
+								<li class="footer_list_item">О нас</li>
+							</a>
+							<a href="#portfolio">
+								<li class="footer_list_item">Портфолио</li>
+							</a>
+							<a href="#servises">
+								<li class="footer_list_item">Услуги</li>
+							</a>
+							<a href="#contacts">
+								<li class="footer_list_item">Контакты</li>
+							</a>
+						</ul>
+					</div>
+					<div class="footers_socails">
+						<p>Свяжитесь с нами</p>
+						<div class="socials">
+							<img src="assets/phone_modal/max_logo.png" alt="" />
+						</div>
+						<div class="socials">
+							<img src="assets/phone_modal/vk_logo.png" alt="" />
+						</div>
+						<div class="socials">
+							<img src="assets/phone_modal/mail_logo.png" alt="" />
+						</div>
+					</div>
+				</header>
+				<div class="full">
+					<img src="assets//footer/logo.png" alt="" />
+				</div>
+				<div class="footer_contacts" id="contacts">
+					<div class="contacts">
+						<div class="cont">
+							<img src="assets/footer/mail.png" alt="" />
+							<a href="mailto:name@example.com">Pulse@mail.com</a>
+						</div>
+						<div class="cont">
+							<img src="assets/footer/phone.png" alt="" />
+							<a href="tel:+74951234567">+7 918 999 9999</a>
+						</div>
+						<div class="cont">
+							<img src="assets/footer/loc.png" alt="" />
+							<p>Весь мир</p>
+						</div>
+					</div>
+					<p>© 2026 Все права защищены.</p>
+				</div>
+			</div>
+		</footer>
+		<script src="index.js"></script>
+	</body>
+</html>

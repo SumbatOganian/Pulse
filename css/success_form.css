@@ -1,0 +1,219 @@
+/* ----------Успешная отправка формы--------- */
+
+.success_modal_wrapper {
+	position: fixed;
+	inset: 0;
+	z-index: 150;
+
+	display: none;
+	align-items: center;
+	justify-content: center;
+
+	padding: 20px;
+	box-sizing: border-box;
+
+	background: rgba(27, 16, 46, 0.35);
+	backdrop-filter: blur(12px);
+
+	overflow-y: auto;
+}
+
+.success_modal {
+	position: relative;
+
+	width: min(100%, 1000px);
+	min-height: 520px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	padding: 55px 70px;
+	box-sizing: border-box;
+
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.72);
+	backdrop-filter: blur(15px);
+
+	border: 3px solid rgba(239, 77, 189, 0.65);
+	box-shadow:
+		0 8px 16px rgba(239, 77, 189, 0.35),
+		inset 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success_close_button {
+	position: absolute;
+	top: 18px;
+	right: 22px;
+
+	width: 36px;
+	height: 36px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: none;
+	background: transparent;
+
+	font-size: 36px;
+	line-height: 1;
+	color: #47237a;
+
+	cursor: pointer;
+}
+
+.success_title {
+	margin: 0;
+
+	font-family: "Comfortaa", sans-serif;
+	font-size: clamp(44px, 5vw, 70px);
+	font-weight: 400;
+	line-height: 1.15;
+
+	color: #47237a;
+	text-align: center;
+}
+
+.success_icon {
+	margin-top: 35px;
+
+	font-size: 54px;
+	line-height: 1;
+}
+
+.success_text {
+	max-width: 850px;
+	margin: 45px auto 0;
+
+	font-family: "Comfortaa", sans-serif;
+	font-size: clamp(28px, 3vw, 42px);
+	line-height: 1.35;
+	font-weight: 400;
+
+	color: #47237a;
+	text-align: center;
+}
+
+.success_ps {
+	margin: 55px auto 0;
+
+	font-family: "Comfortaa", sans-serif;
+	font-size: clamp(22px, 2.4vw, 32px);
+	line-height: 1.3;
+
+	color: #47237a;
+	text-align: center;
+}
+
+.success_gift_text {
+	margin: 22px auto 0;
+
+	font-family: "Comfortaa", sans-serif;
+	font-size: clamp(22px, 2.4vw, 32px);
+	line-height: 1.3;
+
+	color: #47237a;
+	text-align: center;
+}
+
+.success_gift {
+	margin-top: 22px;
+
+	font-size: 50px;
+	line-height: 1;
+}
+
+/* ----------Успешная отправка: телефон--------- */
+
+@media (max-width: 768px) {
+	.success_modal_wrapper {
+		padding: 16px;
+		align-items: flex-start;
+		padding-top: 35px;
+	}
+
+	.success_modal {
+		width: 100%;
+		min-height: auto;
+
+		padding: 55px 22px 45px;
+		border-radius: 18px;
+	}
+
+	.success_close_button {
+		top: 12px;
+		right: 14px;
+
+		width: 32px;
+		height: 32px;
+
+		font-size: 32px;
+	}
+
+	.success_title {
+		font-size: 42px;
+	}
+
+	.success_icon {
+		margin-top: 28px;
+		font-size: 42px;
+	}
+
+	.success_text {
+		margin-top: 35px;
+
+		font-size: 25px;
+		line-height: 1.35;
+	}
+
+	.success_ps {
+		margin-top: 40px;
+		font-size: 22px;
+	}
+
+	.success_gift_text {
+		margin-top: 18px;
+		font-size: 22px;
+	}
+
+	.success_gift {
+		margin-top: 18px;
+		font-size: 42px;
+	}
+}
+
+@media (max-width: 480px) {
+	.success_modal_wrapper {
+		padding: 12px;
+		padding-top: 25px;
+	}
+
+	.success_modal {
+		padding: 48px 16px 38px;
+		border-radius: 16px;
+	}
+
+	.success_title {
+		font-size: 36px;
+	}
+
+	.success_icon {
+		font-size: 36px;
+	}
+
+	.success_text {
+		font-size: 21px;
+		line-height: 1.4;
+	}
+
+	.success_ps,
+	.success_gift_text {
+		font-size: 18px;
+	}
+
+	.success_gift {
+		font-size: 36px;
+	}
+}

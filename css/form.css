@@ -1,0 +1,401 @@
+/* ----------Форма обратной связи--------- */
+.form_section_wrapper {
+	position: fixed;
+	inset: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+
+	overflow-y: auto;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.form_section {
+	width: min(100%, 1000px);
+	max-height: calc(100vh - 40px);
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+
+	border-radius: 20px;
+
+	background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(15px);
+	border: 3px solid rgba(239, 77, 189, 0.25);
+	box-shadow:
+		0 8px 16px 0 rgba(239, 77, 189, 0.3),
+		inset 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+
+	padding: 40px;
+}
+
+.form_section_text {
+	width: 70%;
+
+	font-family: "Comfortaa", sans-serif;
+	color: #47237a;
+	font-size: 26px;
+	text-align: center;
+
+	user-select: none;
+}
+
+.form_section_img {
+	width: 40px;
+}
+
+.form_section label {
+	font-family: "Comfortaa", sans-serif;
+	font-size: 20px;
+	user-select: none;
+}
+
+.input_box {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	width: 80%;
+}
+
+.form_section input {
+	border-radius: 5px;
+	height: 35px;
+
+	border: 1px solid #ef4dbd;
+	outline: none;
+
+	background: rgba(71, 35, 122, 0.25);
+
+	padding: 5px 0px 5px 50px;
+
+	font-family: "Comfortaa", sans-serif;
+	font-size: 20px;
+}
+
+.form_section input::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.important {
+	color: #ff3e00;
+}
+
+.flag {
+	font-family: "Comfortaa", sans-serif;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	border: 1px solid #ef4dbd;
+	border-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+
+	padding: 5px 20px 5px 20px;
+	background: rgba(71, 35, 122, 0.25);
+
+	user-select: none;
+}
+
+.input_box_phone {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	gap: 5px;
+}
+
+.input_box_phone_mod {
+	display: flex;
+	gap: 5px;
+}
+
+.input_box_phone_mod input {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	width: 80%;
+}
+
+.form_submit_section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+
+	margin-top: 40px;
+}
+
+.form_submit_section_text {
+	font-family: "Comfortaa", sans-serif;
+	color: #47237a;
+	margin-right: 40px;
+	user-select: none;
+}
+
+.form_section_submit_button {
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+.form_submit_section_text_mod {
+	text-decoration: underline;
+}
+
+.checkbox_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+/* Чекбокс */
+
+/* ----------Checkbox--------- */
+
+.form_section #checkbox_text {
+	appearance: none;
+	-webkit-appearance: none;
+
+	width: 30px;
+	height: 30px;
+	min-width: 30px;
+
+	padding: 0;
+	margin: 0;
+
+	border: 1.5px solid #47237a;
+	border-radius: 4px;
+	outline: none;
+
+	background: rgba(255, 255, 255, 0.35);
+
+	cursor: pointer;
+	position: relative;
+	box-sizing: border-box;
+}
+
+#checkbox_text {
+	overflow: hidden;
+}
+
+.form_section #checkbox_text:checked::after {
+	content: "";
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	width: 60px;
+	height: 60px;
+
+	background-image: url("../assets/form/checkbox.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	transform: translate(-50%, -40%);
+}
+
+.checkbox_wrapper label {
+	font-family: "Comfortaa", sans-serif;
+	color: #47237a;
+	font-size: 17px;
+	line-height: 1.3;
+	cursor: pointer;
+	/* user-select: none; */
+}
+
+/* .checkbox_wrapper a {
+	color: #47237a;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+} */
+
+/* ----------Планшет--------- */
+
+@media (max-width: 1100px) {
+	.form_section {
+		width: min(100%, 900px);
+	}
+
+	.form_section_text {
+		width: 85%;
+		font-size: 24px;
+	}
+
+	.input_box,
+	.input_box_phone {
+		width: 90%;
+	}
+
+	.input_box_phone_mod {
+		gap: 5px;
+	}
+
+	.form_submit_section {
+		width: 90%;
+	}
+}
+
+/* ----------Телефон--------- */
+
+@media (max-width: 768px) {
+	/* .form_section_wrapper {
+		align-items: flex-start;
+		padding: 18px;
+		padding-top: 35px;
+	} */
+
+	.form_section {
+		width: 100%;
+		max-height: none;
+		padding: 28px 18px;
+		border-radius: 18px;
+		gap: 12px;
+	}
+
+	.form_section_text {
+		width: 100%;
+		font-size: 22px;
+		line-height: 1.25;
+	}
+
+	.form_section_img {
+		width: 34px;
+	}
+
+	.form_section label {
+		font-size: 16px;
+	}
+
+	.input_box,
+	.input_box_phone {
+		width: 100%;
+	}
+
+	.input_box_phone {
+		gap: 10px;
+	}
+
+	.form_section input {
+		width: 100%;
+		height: 42px;
+		box-sizing: border-box;
+
+		font-size: 16px;
+		padding: 5px 14px;
+	}
+
+	.input_box_phone_mod {
+		width: 100%;
+		display: flex;
+		gap: 2px;
+	}
+
+	.flag {
+		flex-shrink: 0;
+		padding: 5px 12px;
+		font-size: 15px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.input_box_phone_mod input {
+		width: 100%;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	.form_submit_section {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		margin-top: 28px;
+	}
+
+	.checkbox_wrapper {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		text-align: left;
+	}
+
+	.checkbox_wrapper label,
+	.form_submit_section_text {
+		font-size: 14px;
+		line-height: 1.35;
+		margin-right: 0;
+	}
+
+	.form_section_submit_button {
+		width: min(100%, 260px);
+		margin-top: 0;
+	}
+
+	.form_section_submit_button img {
+		width: 100%;
+		display: block;
+	}
+}
+
+/* ----------Маленькие телефоны--------- */
+
+@media (max-width: 480px) {
+	.form_section_wrapper {
+		padding: 12px;
+		padding-top: 25px;
+	}
+
+	.form_section {
+		padding: 24px 14px;
+		border-radius: 16px;
+	}
+
+	.form_section_text {
+		font-size: 19px;
+		line-height: 1.3;
+	}
+
+	.form_section_img {
+		width: 30px;
+	}
+
+	.form_section label {
+		font-size: 15px;
+	}
+
+	.form_section input {
+		height: 43px;
+		font-size: 15px;
+	}
+
+	.flag {
+		padding: 5px 10px;
+		font-size: 14px;
+	}
+
+	.checkbox_wrapper {
+		align-items: flex-start;
+	}
+
+	.checkbox_wrapper label,
+	.form_submit_section_text {
+		font-size: 12px;
+	}
+
+	.form_section_submit_button {
+		width: 230px;
+	}
+}

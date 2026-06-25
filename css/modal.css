@@ -1,0 +1,48 @@
+/* -----Модалка----- */
+
+.phone_modal_wrapper {
+	display: none;
+	background-color: transparent;
+	backdrop-filter: blur(20px);
+	position: fixed;
+	inset: 0;
+	padding: 60px 0px;
+	z-index: 50;
+}
+
+.phone_modal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.phone_modal_list {
+	list-style: none;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 2.5;
+}
+
+.phone_modal_button {
+	width: 250px;
+	outline: none;
+	cursor: pointer;
+}
+
+.modal_logo {
+	width: 60px;
+	outline: none;
+	cursor: pointer;
+}
+
+.close_button {
+	width: 35px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	filter: invert(1);
+	outline: none;
+	cursor: pointer;
+}

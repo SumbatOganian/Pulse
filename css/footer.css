@@ -1,0 +1,221 @@
+/* ----------Footer---------- */
+
+.footer {
+	min-height: 60vh;
+	background-image: url("../assets/footer/back.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: white;
+	font-size: clamp(12px, 1vw, 13px);
+	box-sizing: border-box;
+
+	padding: clamp(30px, 4vw, 60px) 0;
+}
+
+.footer_header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+
+	padding: 20px 0 clamp(35px, 4vw, 60px);
+	border-bottom: 1px solid black;
+}
+
+.footer_list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: clamp(15px, 2vw, 20px);
+
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+.footer_list_item {
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+.footer_list_item:hover {
+	color: #ef4dbd;
+}
+
+.footers_socails {
+	border: 1px solid black;
+	border-radius: 15px;
+
+	display: flex;
+	align-items: center;
+	gap: clamp(12px, 2vw, 20px);
+
+	padding: 10px 20px;
+}
+
+.socials {
+	cursor: pointer;
+}
+
+.full {
+	box-sizing: border-box;
+	width: 100%;
+
+	padding: clamp(30px, 4vw, 50px);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.full img {
+	width: 100%;
+	max-width: 1540px;
+	height: auto;
+	display: block;
+}
+
+.footer_contacts {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+
+	padding: clamp(25px, 4vw, 40px) 40px 0;
+}
+
+.contacts {
+	display: flex;
+	align-items: center;
+	gap: clamp(15px, 2vw, 20px);
+}
+
+.cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+/* ----------Планшет---------- */
+
+@media (max-width: 1024px) {
+	.footer {
+		min-height: auto;
+		padding: 50px 0;
+	}
+
+	.full {
+		display: none;
+	}
+
+	.footer_header {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		border: none;
+	}
+
+	.footer_list {
+		order: 3;
+		width: 100%;
+	}
+
+	.footers_socails {
+		justify-content: center;
+	}
+
+	.footer_contacts {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: 35px 20px 0;
+	}
+
+	.contacts {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+/* ----------Телефон---------- */
+
+@media (max-width: 768px) {
+	.footer {
+		padding: 45px 0;
+		background-position: center top;
+	}
+
+	.footer_header {
+		flex-direction: column;
+		padding-bottom: 35px;
+	}
+
+	.footer_list {
+		flex-wrap: wrap;
+		gap: 18px;
+	}
+
+	.footers_socails {
+		flex-direction: column;
+		gap: 15px;
+		padding: 18px 24px;
+	}
+
+	.footer_contacts {
+		padding-top: 25px;
+	}
+
+	.contacts {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.cont {
+		text-align: center;
+	}
+}
+
+/* ----------Маленькие телефоны---------- */
+
+/* @media (max-width: 480px) {
+    .footer {
+        padding: 35px 0;
+        font-size: 12px;
+    }
+
+    .footer_header {
+        gap: 22px;
+    }
+
+    .footer_list {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footers_socails {
+        width: min(100%, 280px);
+        box-sizing: border-box;
+    }
+
+    .full {
+        padding: 28px 16px;
+    }
+
+    .footer_contacts {
+        padding: 20px 16px 0;
+    }
+} */
+
+@media (max-width: 480px) {
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

@@ -1,0 +1,72 @@
+/* -------Hero-секция-------- */
+
+.hero_wrapper {
+	height: 100vh;
+	background-image: url("../assets/hero/hero_banner.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	padding: 50px 0px;
+}
+
+.hero_wrapper .container {
+	height: 100%;
+}
+
+.hero {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.hero_texts {
+	font-family: "Comfortaa", sans-serif;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	height: 50%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	justify-content: space-between;
+}
+
+.hero_button {
+	width: 100%;
+}
+
+/* .hero_button_wrapper {
+	margin-bottom: 100px;
+} */
+
+.hero_button_wrapper {
+	width: 350px;
+	cursor: pointer;
+}
+
+@media (max-width: 1343px) {
+	.hero {
+		height: 100%;
+		align-items: center;
+		text-align: center;
+	}
+
+	.hero_button_wrapper {
+		margin-bottom: 100px;
+	}
+	.hero_texts {
+		height: 40%;
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero_wrapper {
+		background-position: right -200px top;
+	}
+}
