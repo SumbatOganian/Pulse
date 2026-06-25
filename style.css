@@ -17,7 +17,7 @@
 *::after {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	
 	user-select: none;
 }
 
@@ -33,20 +33,9 @@ body {
 	overflow-x: hidden;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
-
 .container {
 	margin: 0 auto;
 	padding: 0 100px;
-}
-
-@media (max-width: 768px) {
-	.container {
-		padding: 0 18px;
-	}
 }
 
 a {
